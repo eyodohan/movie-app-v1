@@ -1,7 +1,20 @@
+import { useRouter } from 'next/router';
+
+import request from '../utils/request';
+
 const Navbar = () => {
+  const router = useRouter();
   return (
-    <div>
-      <h1>navbar</h1>
+    <div className='flex justify-center bg-gray-600 text-gray-200 select-none text-xl lg:text-2xl'>
+      {Object.entries(request).map(([key, { title, url }]) => (
+        <h2
+          className='m-6 cursor-pointer hover:text-white active:text-red-400'
+          key={key}
+          onClick={() => router.push(`?genre=${key}`)}
+        >
+          {title}
+        </h2>
+      ))}
     </div>
   );
 };
