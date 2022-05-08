@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Head from 'next/head';
+
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Results from '../components/Results';

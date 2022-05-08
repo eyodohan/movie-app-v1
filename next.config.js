@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['wikiimg.tojsiabtv.com'],
+    domains: ['wikiimg.tojsiabtv.com', 'image.tmdb.org'],
   },
 };
 
